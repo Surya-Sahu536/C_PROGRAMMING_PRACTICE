@@ -20,6 +20,6 @@ int main()
         c++;
         num=(num-rem)/10;
     }
-    printf("decimal equivalent is %d",dec);
+    printf("decimal equivalent is %d ",dec);
     return 0;
 }
