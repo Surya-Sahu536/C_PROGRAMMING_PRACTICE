@@ -14,9 +14,9 @@ int main()
     printf("Enter 2 nos  ");
     scanf("%d %d",&num1,&num2);
     lcm=num1*num2;
-    for(i=(num1<num2?num2:num1);i<=num1*num2;i++)
+    for(i=(num1<num2?num2:num1);i<=(num1*num2);i++)
     {
-        if(i%num1==0&&i%num2==0)
+        if((i%num1==0)&&(i%num2==0))
         {
           lcm=i;
           break;
