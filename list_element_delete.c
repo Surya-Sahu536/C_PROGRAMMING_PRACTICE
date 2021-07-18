@@ -20,7 +20,7 @@ void display(struct node *curr)
     printf("\n");
 }
 
-void delet(int pos,struct node *curr)
+void delet(int elm,struct node *curr)
 {
     struct node *temp;
     if(pos==1)
