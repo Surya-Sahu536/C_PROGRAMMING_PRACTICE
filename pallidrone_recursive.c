@@ -15,8 +15,7 @@ void display(int arr[],int n,int j)
     else
     {
         printf("%d ",arr[j]);
-        j++;
-        display(arr,n,j);
+        display(arr,n,++j);
     }
 }
 
