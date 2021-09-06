@@ -27,6 +27,7 @@ int main()
     // printf("%p\n",&(arr+1));                         //error
     
     
+    
  
    
     return 0;
