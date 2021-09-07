@@ -24,7 +24,7 @@ int main()
     printf("%d %d %d %d\n",arr[1],1[arr],*(arr+1),*arr+1);
     // printf("%d",*arr[0]);                            //error
     printf("%p %p\n",&arr[1],&arr+1);
-    // printf("%p\n",&(arr+1));                         //error
+    // printf("%p\n",&(arr+1));                          //error
     
     
     
