@@ -19,6 +19,7 @@ int main()
     printf("%d\n",arr);
     printf("%p %p %p %p\n",arr,&arr,&arr[0],arr[0]);
     // arr=6;                                  //error
+    
     *arr=8;                            
     printf("%d\n",arr[0]);                            //8
     printf("%d %d %d %d\n",arr[1],1[arr],*(arr+1),*arr+1);
