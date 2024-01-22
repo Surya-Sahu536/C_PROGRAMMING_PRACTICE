@@ -27,17 +27,20 @@ int main()
    printf("%p %p %p\n",&(*i),&(*j),&(*k));
    printf("%p %p %p\n",&a,&b,&c);
    printf("%d %d %d\n",&a,&b,&c);
-   printf("%d \n",&i);                              //-1446517496
+   printf("\n");
+   
+   printf("%d %p\n",&i,&i);                              //-1446517496
    e=*i;
-   printf("%d %p %p\n",e,&e,&(*i));                                //5
+   printf("%d %p %p %p\n",e,&e,&(*i),i);                                //5  adress of *i same as i ponter 
    f=e;
    printf("%p %p\n",&e,&f);
    l=i;
    printf("%p %p %d %d %p %p\n",i,l,*i,*l,&i,&l);
    p=&i;
-   q=&(&a);
-   printf("%p %p",p,q);
-   printf("%p %p %p %p %d %d",*p,*q,i,&a);
+   //q=&(&a);                                       //error
+   q=&j;
+   printf("%p %p\n",p,q);
+   printf("%p %p %p %p %d %d\n",*p,*q,i,&a);
    printf("%d %d %d %d %d %d",*(*p),*(*q),*i,*(&a),a);
     return 0;
 }
